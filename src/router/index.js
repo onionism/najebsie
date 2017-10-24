@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import ConfirmAge from '@/components/ConfirmAge'
+import FindPub from '@/components/FindPub'
 
 Vue.use(Router)
 
@@ -8,8 +9,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: HelloWorld
+      name: 'ConfirmAge',
+      component: ConfirmAge
+    },
+    {
+      path: '/get-smashed',
+      name: 'FindPub',
+      component: FindPub
     }
   ]
 })
